@@ -5,38 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - 106306092</title>
+    <style>
+        table{
+            border:1px #cccccc solid;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            color:black;
+        }
+        #top th{
+            background-color: rgb(152, 92, 160);
+            border:#fff;
+            color:inherit; 
+            font-weight: bolder;  
+        }
+        tr {
+            color: black;
+            border:rgb(97, 64, 64) solid 1px;
+        }
+        tr .middle{
+            padding: 15px;
+            background-color: rgb(243, 231, 242);
+            color: rgb(58, 57, 57);
+        }
+        tr .bottom{
+            padding: 15px;
+            background-color: rgb(255, 246, 246);
+            color: rgb(58, 57, 57);
+            border:rgb(238, 238, 238) solid 1px;
+        }
+        td{
+            border:rgb(226, 225, 225) solid 1px;
+        }
+        #photo p{
+            font-style:italic;
+            font-size: 16px;
+        }
+        .btn{
+            background-color: #fff;
+            padding: 10px;
+            margin:10px;
+            border:rgb(230, 230, 230) 3px solid;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color: rgb(194, 154, 194);
+            padding: 10px;
+            color:#fff;
+        }        
+    </style>
 </head>
 <body>
     <form method="post" action="http://www.deitel.com" >
         <table border="1" style="border:3px #cccccc solid;" cellpadding="10" border=‘1>
-            <tr>
+            <tr id="top" style="color:white;">
                 <th colspan="3">About - 106306092</th>
             </tr>
             <tr>
-                <td rowspan="3" style="text-align: center;"><img src="images/yun.jpg" width="120px" alt="personal photo" title="personal photo"><p>personal photo</p></td>
-                <td colspan="2"><div><label> Name: <input></label></div><div><label> Gender: <input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female<input type="radio" name="gender" value="Other">Other</div>
+                <td id="photo" rowspan="3" style="text-align: center;"><img src="images/yun.jpg" width="120px" alt="personal photo" title="personal photo"><p>personal photo</p></td>
+                <td colspan="2" class="middle"><div><label> Name: <input></label></div><div><label> Gender: <input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female<input type="radio" name="gender" value="Other">Other</div>
             </tr>
             <tr>
-                <td><label>County: </label><select name="County"><option value="Taipei">Taipei</option><option value="Tainan">Tainan</option><option value="Taichung">Taichung</option><option value="Taoyuan">Taoyuan</option></select></td>
-                <td><label>Birthday: </label><input type="date"></td>
+                <td class="middle"><label>County: </label><select name="County"><option value="Taipei">Taipei</option><option value="Tainan">Tainan</option><option value="Taichung">Taichung</option><option value="Taoyuan">Taoyuan</option></select></td>
+                <td class="middle"><label>Birthday: </label><input type="date"></td>
             </tr>
             <tr>
-                <td colspan="2"><label> E-mail: <input type="email"></label></td>
+                <td class="middle" colspan="2"><label> E-mail: <input type="email"></label></td>
             </tr>
             <tr>
-                <td>Hobby</td>
-                <td colspan="2"><input type="checkbox" name="hobby" value="Swimming">Swimming<input type="checkbox" name="hobby" value="Volleyball">Volleyball<input type="checkbox" name="hobby" value="Movie">Movie<input type="checkbox" name="hobby" value="Game">Game<input type="checkbox" name="hobby" value="sleep">sleep</td>
+                <td class="bottom">Hobby</td>
+                <td class="bottom" colspan="2"><input type="checkbox" name="hobby" value="Swimming">Swimming<input type="checkbox" name="hobby" value="Volleyball">Volleyball<input type="checkbox" name="hobby" value="Movie">Movie<input type="checkbox" name="hobby" value="Game">Game<input type="checkbox" name="hobby" value="sleep">sleep</td>
             </tr>
             <tr>
-                <td>Skill</td>
-                <td colspan="2"><input type="checkbox" name="skill" value="Java">Java<input type="checkbox" name="skill" value="HTML">HTML<input type="checkbox" name="skill" value="Python">Python<input type="checkbox" name="skill" value="Microsoft Office">Microsoft Office<input type="checkbox" name="skill" value="Premiere">Premiere</td>
+                <td class="bottom">Skill</td>
+                <td class="bottom" colspan="2"><input type="checkbox" name="skill" value="Java">Java<input type="checkbox" name="skill" value="HTML">HTML<input type="checkbox" name="skill" value="Python">Python<input type="checkbox" name="skill" value="Microsoft Office">Microsoft Office<input type="checkbox" name="skill" value="Premiere">Premiere</td>
             </tr>
             <tr>
-                <td>Say Something</td>
-                <td colspan="2"><textarea placeholder="Say something here."></textarea></td>
+                <td class="bottom">Say Something</td>
+                <td class="bottom" colspan="2"><textarea placeholder="Say something here."></textarea></td>
             </tr>
             <tr>
-                <td colspan="3"><input type="submit" name="提交"><input type="reset" name="重設"></td>
+                <td colspan="3"><input class="btn" type="submit" name="提交"><input class="btn"  type="reset" name="重設"></td>
             </tr>
         </table>
     </form>
